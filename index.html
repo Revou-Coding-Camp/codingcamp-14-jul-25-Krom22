@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SM Company</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="assets/revou.jpg" alt="Foto Profil" class="profile-pic" />
+      <span class="logo-text">RevoU</span>
+    </div>
+    <nav class="nav-menu">
+      <a href="#home-page">Home</a>
+      <a href="#our-profile">Profile</a>
+      <a href="#message-us">Message Us</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Home Section -->
+    <section id="home-page" class="content">
+      <h1 class="text-2xl font-bold text-center my-4">Welcome <span id="welcome-user">[User]</span> to Our
+                    Website
+                </h1>
+      <p class="text-center">This is the first website training</p>
+      <img src="assets/index.jpg" alt="Banner" class="banner-img" />
+    </section>
+
+    <hr />
+
+    <!-- Profile Section -->
+    <section id="our-profile" class="content">
+      <h2 class="section-title">My Profile</h2>
+      <div class="profile-card">
+        <img src="assets/poto.jpeg" alt="Foto Profil" class="profile-image" />
+        <div class="profile-info">
+          <h3>Name: Ridhatul Akram SM</h3>
+          <p><strong>Hobby:</strong> Exercise, Playing Game, Travelling, Watching Movie</p>
+          <p><strong>Description:</strong> Hello Everyone! I am a student who is studying at Indrapasta PGRI University Jakarta and majoring in Informatics Engineering. I am very happy to learn new things in my life because it can make me add insight and participating in the codingcamp program from Revou is my first time participating in an event like this.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Message Us Section -->
+    <section id="message-us" class="content">
+      <h2 class="section-title">Message Us</h2>
+      <div class="form-result-layout">
+        <form id="formInput" class="form-message">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="pesan">Message:</label>
+            <textarea id="pesan" name="pesan" rows="4" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="submit-btn">Send</button>
+          </div>
+        </form>
+        <div class="hasil" id="result">
+          <span id="hasilNama">Name: -</span>
+          <span id="hasilPesan">Message: -</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- Footer -->
+<footer>
+  <p>Created By <strong>Ridhatul Akram SM.</strong></p>
+</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
